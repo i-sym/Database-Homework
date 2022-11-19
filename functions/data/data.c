@@ -192,6 +192,7 @@ void doDelete(PGconn *conn, DataType dataType) {
             getchar();
             sprintf(query, "DELETE FROM grade WHERE id_grade = %d", gradeId);
             executeQuery(conn, query, "Grade deleted successfully", "Error deleting grade");
+            updateAverage(conn, gradeId);
             break;
         case SUBJECT:
             int subjectId;
