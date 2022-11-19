@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "libpq-fe.h": "c",
+        "postgres_ext.h": "c",
+        "pg_config_ext.h": "c",
+        "db.h": "c",
+        "forms.h": "c"
+    },
+    "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
+        "clang-analyzer-security.insecureAPI.strcpy",
+        "clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling"
+    ]
+}
